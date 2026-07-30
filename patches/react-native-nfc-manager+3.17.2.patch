@@ -1,0 +1,21 @@
+diff --git a/node_modules/react-native-nfc-manager/android/build.gradle b/node_modules/react-native-nfc-manager/android/build.gradle
+index e9e5ae1..2448146 100644
+--- a/node_modules/react-native-nfc-manager/android/build.gradle
++++ b/node_modules/react-native-nfc-manager/android/build.gradle
+@@ -2,15 +2,7 @@ def safeExtGet(prop, fallback) {
+     rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
+ }
+ 
+-buildscript {
+-	repositories {
+-		mavenCentral()
+-	}
+-
+-	dependencies {
+-		classpath 'com.android.tools.build:gradle:1.5.0'
+-	}
+-}
++// buildscript with AGP 1.5.0 removed — root project already provides the Android Gradle Plugin
+ apply plugin: 'com.android.library'
+ 
+ android {
