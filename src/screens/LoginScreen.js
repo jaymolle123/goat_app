@@ -14,7 +14,7 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 
 const DEMO_CREDENTIALS = {
   username: 'demo@goatapp.com',
-  password: 'Password123',
+  password: 'Password',
 };
 
 const FormInput = ({
